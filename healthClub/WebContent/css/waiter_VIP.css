@@ -1,0 +1,151 @@
+.waiter-VIP{
+	max-width: 960px;
+	margin: 50px auto;
+}
+.waiter-VIP-info{
+	width: 100%;
+}
+.waiter-VIP-appointment{
+	display:none;
+	width: 100%;
+}
+.waiter-VIP-record{
+	display:none;
+	width: 100%;
+}
+.waiter-VIP-payment{
+	display:none;
+	width: 100%;
+}
+.waiter-VIP-search input[type=text]{
+	input: inline-block;
+	vertical-align: top;
+	width: 70%;
+}
+.waiter-VIP-search input[type=submit]{
+	input: inline-block;
+	vertical-align: top;
+	width: 29%;
+}
+.waiter-VIP label{
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0;
+	vertical-align: top;
+	padding: 5px; 
+	width: 26%;
+}
+.waiter-VIP input[type=text],.waiter-VIP input[type=password],.waiter-VIP input[type=date]{
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	width: 70%;
+}
+.dropdown{
+	display: inline-block;
+	width: 72%;
+	margin-bottom: 10px;
+}
+.waiter-VIP-person-info{
+	display: none;
+}
+.waiter-VIP-person-label{
+	text-align: center;
+	border-bottom: solid 1px black;
+	padding:0 5px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.waiter-VIP-appointment-activity{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.waiter-VIP-appointment-session{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.waiter-VIP-appointment-person{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.waiter-VIP-appointment-date{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.waiter-VIP-appointment-starttime{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.waiter-VIP-appointment-place{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.waiter-VIP-record-activity{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 23%;
+}
+.waiter-VIP-record-session{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 23%;
+}
+.waiter-VIP-record-person{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 23%;
+}
+.waiter-VIP-record-date{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 23%;
+}
+.waiter-VIP-payment-balance{
+	padding: 10px 50px;
+}
+.waiter-VIP-payment-ID{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 18%;
+}
+.waiter-VIP-payment-date{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 18%;
+}
+.waiter-VIP-payment-bankCard{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 20%;
+}
+.waiter-VIP-payment-num{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 18%;
+}
+.waiter-VIP-payment-remark{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 18%;
+}

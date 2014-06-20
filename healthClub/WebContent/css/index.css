@@ -1,0 +1,29 @@
+.index-page{
+	min-width: 840px;
+	height: 640px;
+	background: top left repeat-x #348eda;
+}
+.index-account{
+	margin: 60px 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+.loginForm{
+	max-width: 240px;
+	padding: 10px 10px;
+}
+input[type="button"]{
+	margin-bottom: 10px;
+	width: 50%;
+}
+.btn-group{
+	padding: 10px 10px;
+	width: 240px; 
+}
+.index-display{
+	width: 840px;
+	height: 540px;
+	display: inline-block;
+	padding: 10px 100px;
+	margin:0 auto;
+}

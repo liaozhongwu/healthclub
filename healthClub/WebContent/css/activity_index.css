@@ -1,0 +1,73 @@
+.activity-index-search{
+	padding: 10px 30px;
+}
+.activity-index-search input[type=text]{
+	width: 70%;
+}
+.activity-index-search input[type=submit]{
+	width: 28%;
+}
+.activity-index{
+	width: 100%;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.activity-index:hover{
+	background: #348eda;
+	color:white;
+}
+.activity-index div{
+	display: inline-block;
+	vertical-align: top;
+}
+.activity-index-header div{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+.activity-index-name{
+	width: 100px;
+	text-align: center;
+	padding: 3px 5px;
+}
+.activity-index-introduction{
+	width: 260px;
+	text-align: center;
+	padding: 3px 5px;
+}
+.activity-index-sessions{
+	width: 572px;
+}
+.activity-index-session{
+	width: 100%;
+}
+.activity-index-session-ID{
+	width: 40px;
+	text-align: center;
+	padding: 3px 5px;
+}
+.activity-index-session-date{
+	width: 80px;
+	text-align: center;
+	padding: 3px 5px;
+}
+.activity-index-session-starttime{
+	width: 60px;
+	text-align: center;
+	padding: 3px 5px;
+}
+.activity-index-session-endtime{
+	width: 60px;
+	text-align: center;
+	padding: 3px 5px;
+}
+.activity-index-session-place{
+	width: 100px;
+	text-align: center;
+	padding: 3px 5px;
+}
+.activity-index-session-coach{
+	width: 140px;
+	text-align: center;
+	padding: 3px 5px;
+}

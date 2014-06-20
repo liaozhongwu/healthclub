@@ -1,0 +1,25 @@
+.activity{
+	max-width:720px;
+	margin: 50px auto;
+}
+.activity label{
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+	margin-top: 5px;
+}
+.activity .activity-session-slide{
+	width: 70%;
+}
+.activity .activity-session-remove{
+	width: 29%;
+}
+.activity .activity-session-btngroup{
+	margin-bottom: 10px;
+}
+.activity input[type=text],.activity input[type=password],.activity input[type=date],.activity input[type=time]{
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	width: 79%;
+}

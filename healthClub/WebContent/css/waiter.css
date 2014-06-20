@@ -1,0 +1,31 @@
+.waiter-activity{
+	max-width: 720px;
+	margin: 50px auto;
+}
+#waiter-activity-create{
+	margin-bottom: 10px;
+}
+.waiter-activity-search input[type=text]{
+	input: inline-block;
+	vertical-align: top;
+	width: 70%;
+}
+.waiter-activity-search input[type=submit]{
+	input: inline-block;
+	vertical-align: top;
+	width: 29%;
+}
+.waiter-VIP{
+	max-width: 720px;
+	margin: 50px auto;
+}
+.waiter-VIP-search input[type=text]{
+	input: inline-block;
+	vertical-align: top;
+	width: 70%;
+}
+.waiter-VIP-search input[type=submit]{
+	input: inline-block;
+	vertical-align: top;
+	width: 29%;
+}

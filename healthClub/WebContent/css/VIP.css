@@ -1,0 +1,190 @@
+.VIP-card{
+	width: 100%;
+}
+.VIP-appointment{
+	display:none;
+	width: 100%;
+}
+.VIP-record{
+	display:none;
+	width: 100%;
+}
+.VIP-payment{
+	display:none;
+	width: 100%;
+}
+.background-shadow{
+	position: fixed;left:0;top:0;z-index:5;
+	min-width: 1440px;
+	min-height:960px;
+	display:none;
+	background: top left repeat-x rgba(0,0,0,0.8);
+}
+.VIP-block{
+	display: inline-block;
+	vertical-align:top;
+	min-width: 300px;
+	min-height: 240px;
+	max-height: 640px;
+	border-radius: 4px;
+	background: top left repeat-x #348eda;
+	color: white;
+	padding: 10px;
+	line-height: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.VIP-block-show{
+	position: fixed;
+	z-index:99;
+}
+.VIP-block label{
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0;
+	vertical-align: top;
+	padding: 5px; 
+	width: 20%;
+}
+.VIP-block input[type=text],.VIP-block input[type=password],.VIP-block input[type=date]{
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	width: 70%;
+}
+.VIP-block select{
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	width: 72%;
+}
+.VIP-block select option{
+	line-height: 40px
+}
+.VIP-block input[type=button]{
+	min-width: 200px; 
+}
+.VIP-block-person-label{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	text-align: center;
+	border-top: solid 1px white;
+	cursor: pointer;
+}
+.VIP-block-person-info{
+	display: none;
+}
+.VIP-block-btngroup{
+	border-top: solid 1px white;
+	padding: 3px 5px;
+}
+.VIP-appointment-activity{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.VIP-appointment-session{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.VIP-appointment-person{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.VIP-appointment-date{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.VIP-appointment-starttime{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.VIP-appointment-place{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 15%;
+}
+.VIP-record-activity{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 23%;
+}
+.VIP-record-session{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 23%;
+}
+.VIP-record-person{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 23%;
+}
+.VIP-record-date{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 23%;
+}
+.VIP-payment-ID{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 18%;
+}
+.VIP-payment-date{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 18%;
+}
+.VIP-payment-bankCard{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 20%;
+}
+.VIP-payment-num{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 18%;
+}
+.VIP-payment-remark{
+	display: inline-block;
+	text-align: center;
+	padding: 3px 5px;
+	width: 18%;
+}
+.VIP-balance{
+	margin: 20px auto; 
+	width: 720px;
+}
+.VIP-balance form{
+	display: inline-block;
+}
+.VIP-balance input{
+	margin-left: 10px;
+}
+.dropdown{
+	display: inline-block;
+	width: 72%;
+	margin-bottom: 10px;
+}
+.overflow-auto{
+	overflow: auto;
+}

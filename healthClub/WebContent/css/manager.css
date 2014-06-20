@@ -1,0 +1,12 @@
+.btn-group{
+	display: block;
+	width: 960px;
+	margin: 50px auto;
+}
+.btn-group .btn{
+	width: 15%;
+}
+#container{
+	max-width: 960px;
+	margin: 50px auto;
+}
