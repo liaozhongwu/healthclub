@@ -1,0 +1,53 @@
+#showPanel{
+	position: relative;
+}
+#waiter-activity-search{
+	position: absolute;
+	left: 320px;
+	width: 320px;
+}
+#waiter-activity-search-result{
+	position: absolute;
+	left: 320px;
+	width: 640px;
+}
+.activity-table{
+	width: 100%;
+	min-width: 640px;
+}
+.activity-table-row:hover{
+	background: #348eda;
+	color: white;
+	cursor: pointer;
+}
+.activity-table td{
+	text-align: center;
+	padding: 4px 6px;
+}
+#waiter-VIP-search{
+	position: absolute;
+	left: 320px;
+	width: 320px;
+}
+#waiter-VIP-search-result{
+	position: absolute;
+	left: 320px;
+	width: 640px;
+}
+.VIP-table{
+	width: 100%;
+	min-width: 640px;
+}
+.VIP-table-row:hover{
+	background: #348eda;
+	color: white;
+	cursor: pointer;
+}
+.VIP-table td{
+	text-align: center;
+	padding: 4px 6px;
+}
+#waiter-addActivity{
+	width: 320px;
+	margin: 50px auto;
+}

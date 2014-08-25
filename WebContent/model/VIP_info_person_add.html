@@ -1,0 +1,71 @@
+<div id="hint">
+	<div id="hint-content">
+		<div id="hint-title">添加成员</div>
+		<img id="hint-close" src="image/close.png" alt="close">
+		<input id="hint-newPerson-name" class="input-block-level" type="text" name="name" state="inactive" placeholder="姓名">
+		<div class="dropdown">
+			<input id="hint-newPerson-sex" class="dropdown-button input-block-level" type="text" name="sex" state="inactive" placeholder="性别" data-toggle="dropdown" autocomplete="off">
+			<div class="dropdown-menu" role="menu">
+				<div class="dropdown-item" value="male">male(男)</div>
+				<div class="dropdown-item" value="female">female(女)</div>
+			</div>
+		</div>
+		<input id="hint-newPerson-birthday" class="input-block-level" type="text" name="birthday" state="inactive" placeholder="生日">
+		<input id="hint-newPerson-address" class="input-block-level" type="text" name="address" state="inactive" placeholder="居住地">
+		<input id="hint-newPerson-telephone" class="input-block-level" type="text" name="telephone" state="inactive" placeholder="电话">
+		<input id="hint-newPerson-email" class="input-block-level" type="text" name="email" state="inactive" placeholder="邮箱">
+		<input id="hint-newPerson-resident" class="input-block-level" type="text" name="resident" state="inactive" placeholder="身份证">
+	    <input id="hint-confirm" type="button" class="btn btn-info btn-block" value="确认添加">
+	</div>
+	<script type="text/javascript">
+		$("#hint-content").animate({"top" : "20%"}, 300);
+		hint_newPerson_bind();
+		$("#hint-close").click(hint_close);
+		$("#hint-confirm").click(hint_confirm);
+		function hint_confirm(){
+			if(hint_newPerson_check()){
+				$("#hint-content").animate({"top" : 0}, 300,function(){
+					var name = $("#hint-newPerson-name").val();
+					var sex = $("#hint-newPerson-sex").val();
+					var birthday = $("#hint-newPerson-birthday").val();
+					var address = $("#hint-newPerson-address").val();
+					var telephone = $("#hint-newPerson-telephone").val();
+					var email = $("#hint-newPerson-email").val();
+					var resident = $("#hint-newPerson-resident").val();
+					$.post("addPerson",{"name":name,"sex":sex,"birthday":birthday,"address":address,"telephone":telephone,"email":email,"resident":resident},function(data){
+						VIP_info_load();
+					})
+					hint_remove();
+				});
+			}
+		}
+		function hint_close(){
+			$("#hint-content").animate({"top" : 0}, 300,function(){
+				hint_remove();
+			});
+		}
+		function hint_remove(){
+			$("#hint").remove();
+		}
+		function hint_newPerson_bind(){
+			$("#hint-newPerson-name").blur(checkName);
+			$(".dropdown-item").click(function(){$(this).closest(".dropdown").find(".dropdown-button").attr("value",$(this).attr("value"));});
+			$("#hint-newPerson-birthday").datepicker({
+				format: 'yyyy-mm-dd',
+				autoclose: true,
+			});
+			$("#hint-newPerson-address").blur(checkAddress);
+			$("#hint-newPerson-telephone").keypress(function(event){if(event.keyCode < 48 || event.keyCode > 58){return false;}}).blur(checkTelephone);
+			$("#hint-newPerson-email").blur(checkEmail);
+			$("#hint-newPerson-resident").keypress(function(event){if(event.keyCode < 48 || event.keyCode > 58){return false;}}).blur(checkResident);
+		}
+		function hint_newPerson_check(){
+			return checkNameOf($("#hint-newPerson-name")) &&
+				checkBirthdayOf($("#hint-newPerson-birthday")) &&
+				checkAddressOf($("#hint-newPerson-address")) &&
+				checkTelephoneOf($("#hint-newPerson-telephone")) &&
+				checkEmailOf($("#hint-newPerson-email")) &&
+				checkResidentOf($("#hint-newPerson-resident"));
+		}
+	</script>
+</div>

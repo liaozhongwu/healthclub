@@ -1,0 +1,16 @@
+<form id="waiter-addActivity" method="POST" action="addActivity">
+	<input id="waiter-addActivity-name" class="input-block-level" type="text" name="name" placeholder="活动名称">
+	<input id="waiter-addActivity-introduction" class="input-block-level" type="text" name="introduction" placeholder="活动介绍">
+	<input id="waiter-addActivity-submit" class="btn btn-info btn-block" type="submit" name="submit" value="新建活动">
+</form>
+<script type="text/javascript">
+	$("#waiter-addActivity-name").blur(checkContent);
+	$("#waiter-addActivity-introduction").blur(checkContent);
+	$("#waiter-addActivity").submit(function(){
+		if(checkContentOf($("#waiter-addActivity-name")) && checkContentOf($("#waiter-addActivity-introduction"))){
+			return true;
+		}else{
+			return false;
+		}
+	})
+</script>

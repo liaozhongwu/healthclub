@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="struts2" namespace="/" extends="struts-default">
+		<action name="login" class="edu.nju.healthClub.action.LoginAction">
+			<result name="VIP">VIP.jsp</result>
+			<result name="Waiter">waiter.jsp</result>
+			<result name="Manager">manager.jsp</result>
+			<result name="Admin">admin.jsp</result>
+		</action>
+		<action name="logout" class="edu.nju.healthClub.action.LogoutAction">
+			<result name="success">login.jsp</result>
+		</action>
+		<action name="register" class="edu.nju.healthClub.action.RegisterAction">
+			<result name="success">VIP.jsp</result>
+			<result name="fail">register.jsp</result>
+			<result name="VIP">VIP.jsp</result>
+			<result name="Waiter">waiter.jsp</result>
+			<result name="Manager">manager.jsp</result>
+			<result name="Admin">admin.jsp</result>
+			<result name="noLogin">login.jsp</result>
+		</action>
+        <action name="addActivity" class="edu.nju.healthClub.action.AddActivityAction">
+			<result name="success">activity.jsp</result>
+			<result name="VIP">VIP.jsp</result>
+			<result name="Waiter">waiter.jsp</result>
+			<result name="Manager">manager.jsp</result>
+			<result name="Admin">admin.jsp</result>
+			<result name="noLogin">login.jsp</result>
+		</action>
+		<action name="viewActivity" class="edu.nju.healthClub.action.ViewActivityAction">
+			<result name="success">activity.jsp</result>
+			<result name="VIP">VIP.jsp</result>
+			<result name="Waiter">waiter.jsp</result>
+			<result name="Manager">manager.jsp</result>
+			<result name="Admin">admin.jsp</result>
+			<result name="noLogin">login.jsp</result>
+		</action>
+		<action name="addWaiter" class="edu.nju.healthClub.action.AddWaiterAction">
+			<result name="success">admin.jsp</result>
+			<result name="VIP">VIP.jsp</result>
+			<result name="Waiter">waiter.jsp</result>
+			<result name="Manager">manager.jsp</result>
+			<result name="Admin">admin.jsp</result>
+			<result name="noLogin">login.jsp</result>
+		</action>
+		<action name="addManager" class="edu.nju.healthClub.action.AddManagerAction">
+			<result name="success">admin.jsp</result>
+			<result name="VIP">VIP.jsp</result>
+			<result name="Waiter">waiter.jsp</result>
+			<result name="Manager">manager.jsp</result>
+			<result name="Admin">admin.jsp</result>
+			<result name="noLogin">login.jsp</result>
+		</action>
+		<action name="removeWaiter" class="edu.nju.healthClub.action。RemoveWaiterAction">
+			<result name="success">admin.jsp</result>
+			<result name="VIP">VIP.jsp</result>
+			<result name="Waiter">waiter.jsp</result>
+			<result name="Manager">manager.jsp</result>
+			<result name="Admin">admin.jsp</result>
+			<result name="noLogin">login.jsp</result>
+		</action>
+		<action name="removeManager" class="edu.nju.healthClub.action.RemoveManagerAction">
+			<result name="success">admin.jsp</result>
+			<result name="VIP">VIP.jsp</result>
+			<result name="Waiter">waiter.jsp</result>
+			<result name="Manager">manager.jsp</result>
+			<result name="Admin">admin.jsp</result>
+			<result name="noLogin">login.jsp</result>
+		</action>
+		<action name="updateWaiter" class="edu.nju.healthClub.action.UpdateWaiterAction">
+			<result name="success">admin.jsp</result>
+			<result name="VIP">VIP.jsp</result>
+			<result name="Waiter">waiter.jsp</result>
+			<result name="Manager">manager.jsp</result>
+			<result name="Admin">admin.jsp</result>
+			<result name="noLogin">login.jsp</result>
+		</action>
+		<action name="updateManager" class="edu.nju.healthClub.action.UpdateManagerAction">
+			<result name="success">admin.jsp</result>
+			<result name="VIP">VIP.jsp</result>
+			<result name="Waiter">waiter.jsp</result>
+			<result name="Manager">manager.jsp</result>
+			<result name="Admin">admin.jsp</result>
+			<result name="noLogin">login.jsp</result>
+		</action>
+	</package>
+	<package name="ajax" extends="json-default">
+		<action name="addActivitySession" class="edu.nju.healthClub.action.ajax.AddActivitySessionAction">
+            <result type="json"></result>
+        </action>
+		<action name="addPerson" class="edu.nju.healthClub.action.ajax.AddPersonAction">
+            <result type="json"></result>
+        </action>
+        <action name="addAppointment" class="edu.nju.healthClub.action.ajax.AddAppointmentAction">
+            <result type="json"></result>
+        </action>
+        <action name="addRecord" class="edu.nju.healthClub.action.ajax.AddRecordAction">
+            <result type="json"></result>
+        </action>
+        <action name="checkPassword" class="edu.nju.healthClub.action.ajax.CheckPasswordAction">
+            <result type="json"></result>
+        </action>
+        <action name="checkUsername" class="edu.nju.healthClub.action.ajax.CheckUsernameAction">
+            <result type="json"></result>
+        </action>
+		<action name="freezeVIP" class="edu.nju.healthClub.action.ajax.FreezeVIPAction">
+			<result type="json"></result>
+		</action>
+        <action name="modifyActivity" class="edu.nju.healthClub.action.ajax.ModifyActivityAction">
+            <result type="json"></result>
+        </action>
+        <action name="modifyActivitySession" class="edu.nju.healthClub.action.ajax.ModifyActivitySessionAction">
+            <result type="json"></result>
+        </action>
+        <action name="modifyPassword" class="edu.nju.healthClub.action.ajax.ModifyPasswordAction">
+            <result type="json"></result>
+        </action>
+        <action name="modifyPerson" class="edu.nju.healthClub.action.ajax.ModifyPersonAction">
+            <result type="json"></result>
+        </action>
+        <action name="removeActivitySession" class="edu.nju.healthClub.action.ajax.RemoveActivitySessionAction">
+        	<result type="json"></result>
+        </action>
+        <action name="removePerson" class="edu.nju.healthClub.action.ajax.RemovePersonAction">
+        	<result type="json"></result>
+        </action>
+        <action name="removeAppointment" class="edu.nju.healthClub.action.ajax.RemoveAppointmentAction">
+        	<result type="json"></result>
+        </action>
+        <action name="removeRecord" class="edu.nju.healthClub.action.ajax.RemoveRecordAction">
+        	<result type="json"></result>
+        </action>
+		<action name="VIPPay" class="edu.nju.healthClub.action.ajax.VIPPayAction">
+			<result type="json"></result>
+		</action>
+		<action name="VIPActivate" class="edu.nju.healthClub.action.ajax.VIPActivateAction">
+			<result type="json"></result>
+		</action>
+        <action name="personAge" class="edu.nju.healthClub.action.data.PersonAgeAction">
+        	<result type="json"></result>
+        </action>
+        <action name="personSex" class="edu.nju.healthClub.action.data.PersonSexAction">
+        	<result type="json"></result>
+        </action>
+        <action name="personAddress" class="edu.nju.healthClub.action.data.PersonAddressAction">
+        	<result type="json"></result>
+        </action>
+        <action name="VIPState" class="edu.nju.healthClub.action.data.VIPStateAction">
+        	<result type="json"></result>
+        </action>
+        <action name="recordByDay" class="edu.nju.healthClub.action.data.RecordByDayAction">
+        	<result type="json"></result>
+        </action>
+        <action name="placeUsage" class="edu.nju.healthClub.action.data.PlaceUsageAction">
+        	<result type="json"></result>
+        </action>
+        <action name="coachUsage" class="edu.nju.healthClub.action.data.CoachUsageAction">
+        	<result type="json"></result>
+        </action>
+    </package>
+</struts>
+

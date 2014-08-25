@@ -1,0 +1,31 @@
+<div id="hint">
+	<div id="hint-content">
+		<div id="hint-title">冻结账户</div>
+		<img id="hint-close" src="image/close.png" alt="close">
+		<label>为了您的账户安全，请确认密码 </label>
+		<input id="hint-freeze-password" type="password" class="input-block-level" name="password" placeholder="密码">
+	    <input type="button" class="btn btn-info btn-block" id="hint-confirm" value="确认冻结">
+	</div>
+	<script type="text/javascript">
+		$("#hint-content").animate({"top" : "20%"}, 300);
+		$("#hint-close").click(hint_close);
+		$("#hint-confirm").click(hint_confirm);
+		function hint_confirm(){
+			$("#hint-content").animate({"top" : 0}, 300,function(){
+				var password = $("#hint-freeze-password").val();
+				$.post("freezeVIP",{"password":password},function(data){
+					VIP_info_load();
+				});
+				hint_remove();
+			});
+		}
+		function hint_close(){
+			$("#hint-content").animate({"top" : 0}, 300,function(){
+				hint_remove();
+			});
+		}
+		function hint_remove(){
+			$("#hint").remove();
+		}
+	</script>
+</div>

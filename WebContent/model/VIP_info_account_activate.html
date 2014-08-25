@@ -1,0 +1,37 @@
+<div id="hint">
+	<div id="hint-content">
+		<div id="hint-title">账户激活</div>
+		<img id="hint-close" src="image/close.png" alt="close">
+		<h4>请认真阅读以下声明</h4>
+		<textarea class ="input-block-level" style="min-height:260px;resize:none" readonly="readonly" >
+			&#13;&#10;1.会员注册费为75美元/个人,100美元/家庭&#13;&#10;
+			&#13;&#10;2.会员每月收费为40美元/成人,55美元/夫妻,10美元/10-18岁孩子&#13;&#10;
+			&#13;&#10;3.系统每月1日自动扣费,请保证您的余额充足,否则我们会暂停您的服务,若6个月未交费,则停止服务
+		</textarea>
+		<input id="hint-pay-bankcard" type="text" class="input-block-level" name="bankcard" placeholder="银行卡">
+	    <input type="button" class="btn btn-info btn-block" id="hint-confirm" value="激活">
+	</div>
+	<script type="text/javascript">
+		$("#hint-content").animate({"top" : "20%"}, 300);
+		$("#hint-close").click(hint_close);
+		$("#hint-confirm").click(hint_confirm);
+		function hint_confirm(){
+			$("#hint-content").animate({"top" : 0}, 300,function(){
+				var bankcard = $("#hint-pay-bankcard").val();
+				var money = $("#hint-pay-money").val();
+				$.post("VIPPay",{"bankcard":bankcard,"money":money},function(data){
+					VIP_info_load();
+				});
+				hint_remove();
+			});
+		}
+		function hint_close(){
+			$("#hint-content").animate({"top" : 0}, 300,function(){
+				hint_remove();
+			});
+		}
+		function hint_remove(){
+			$("#hint").remove();
+		}
+	</script>
+</div>

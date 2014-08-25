@@ -1,0 +1,34 @@
+#activity-index-search{
+	width: 320px;
+}
+#showPanel{
+	position: relative;
+}
+#VIP-activity-search{
+	position: absolute;
+	left: 320px;
+	width: 320px;
+}
+#VIP-activity-search-result{
+	position: absolute;
+	left: 320px;
+	width: 640px;
+}
+.activity-table{
+	width: 100%;
+	min-width: 640px;
+}
+.activity-table-row:hover{
+	background: #348eda;
+	color: white;
+	cursor: pointer;
+}
+.activity-table td{
+	text-align: center;
+	padding: 4px 6px;
+}
+.activity-index{
+	width: 100%;
+	margin-bottom: 10px;
+	cursor: pointer;
+}

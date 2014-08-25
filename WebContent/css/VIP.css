@@ -1,0 +1,52 @@
+#showPanel{
+	min-width: 640px;
+}
+table{
+	width: 100%;
+}
+td{
+	text-align: center;
+	padding: 4px 6px;
+}
+.VIP-block-label{
+	font-weight: 800;
+	padding: 5px 0;
+}
+.VIP-input-label{
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0;
+	vertical-align: top;
+	padding: 3px; 
+	width: 100px;
+}
+#VIP-info-account-info{
+	display:inline-block;
+	vertical-align: top;
+	width: 700px;
+}
+#VIP-info-account-options{
+	display: inline-block;
+	vertical-align: top;
+	width: 240px;
+}
+#VIP-info-person{
+	display: inline-block;
+	vertical-align: top;
+	width: 700px;
+}
+#VIP-info-persons-options{
+	display: inline-block;
+	vertical-align: top;
+	width: 240px;
+}
+.VIP-info-person-info{
+	display: none;
+}
+#VIP-info-currPerson-info{
+	display: block;
+}
+#VIP-info input[type=text],.VIP-info input[type=password]{
+	display: inline-block;
+	width: 540px;
+}

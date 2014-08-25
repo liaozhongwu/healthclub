@@ -1,0 +1,177 @@
+.activity{
+	max-width: 960px;
+	margin: 50px auto;
+}
+.activity-display{
+	width: 100%;
+	text-align: center;
+}
+.activity-sessionHead-window{
+	position: relative;
+	height: 88px;
+	margin: 15px 0;
+	border: solid 3px #313131;
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+	overflow: hidden;
+}
+.activity-sessionHead-container{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.activity-sessionHead{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	border: solid 4px #348eda;
+	border-radius: 50%;
+	background: #fff;
+	cursor: pointer;
+}
+.activity-sessionHead-end{
+	background: #ccc;
+}
+#activity-sessionHead-curr{
+	background: #348eda;
+	color: #fff;
+}
+.activity-sessionHead-name{
+	position: relative;
+	top: 15px;
+	font-weight: 700;
+	font-size: 18px;
+}
+.activity-sessionHead-date{
+	position: relative;
+	top: 15px;
+	font-size: 14px;
+}
+.activity-sessionHead-state{
+	position: relative;
+	top: 15px;
+	font-size: 14px;
+}
+.activity-session-window{
+	position: relative;
+	width: 960px;
+	height: 200px;
+	overflow: hidden;
+	border: solid 3px #313131;
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+	background: url(../image/window_background.png);
+	margin:15px 0;
+}
+.activity-session-container{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.activity-session{
+	position: absolute;
+	width: 320px;
+}
+#activity-currSession{
+	display: block;
+}
+.activity-session-info{
+	padding: 10px 0;
+}
+.activity-session-info-name{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.activity-session-info-state{
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.activity-session-info-date{
+	text-align: center;
+	font-size: 20px;
+	color: #548763;
+	margin-bottom: 10px;
+}
+.activity-session-info-time{
+	text-align: center;
+	font-size: 20px;
+	color: #548763;
+	margin-bottom: 10px;
+}
+.activity-session-info-place{
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.activity-session-info-coach{
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.activity-session-relative{
+	width: 960px; 
+	margin:15px 0;
+	border-radius: 10px;
+	border: solid 3px #313131;
+	box-shadow: 0 0 10px black;
+}
+.activity-session-appointment-VIP{
+	width: 480px;
+	margin: 0 auto;
+}
+.activity-session-appointment-VIP input[type=text]{
+	display: inline-block;
+	width: 140px;
+}
+.activity-session-appointment-VIP input[type=button]{
+	display: inline-block;
+	width: 154px;
+}
+.activity-session-appointment-VIP .dropdown{
+	display: inline-block;
+	vertical-align: top;
+	width: 154px;
+}
+.activity-session-appointment-waiter{
+	display: inline-block;
+	vertical-align: top;
+	width: 470px;
+}
+.activity-session-appointment-waiter input[type=text]{
+	display: inline-block;
+	width: 100px;
+}
+.activity-session-appointment-waiter input[type=button]{
+	display: inline-block;
+	width: 114px;
+}
+.activity-session-appointment-waiter .dropdown{
+	display: inline-block;
+	vertical-align: top;
+	width: 114px;
+}
+.activity-session-record{
+	display: inline-block;
+	vertical-align: top;
+	width: 470px;
+	padding: 0 5px;
+	border-left: solid 2px #313131;
+}
+.activity-session-record input[type=text]{
+	display: inline-block;
+	width: 100px;
+}
+.activity-session-record input[type=button]{
+	display: inline-block;
+	width: 114px;
+}
+.activity-session-record .dropdown{
+	display: inline-block;
+	vertical-align: top;
+	width: 114px;
+}
